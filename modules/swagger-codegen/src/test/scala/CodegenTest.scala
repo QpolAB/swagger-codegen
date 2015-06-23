@@ -60,14 +60,6 @@ class CodegenTest extends FlatSpec with Matchers {
     op.produces.get(0).get("hasMore") should be("true")
     op.produces.get(1).get("mediaType") should be("application/xml")
 
-    val pathParams = op.pathParams
-    pathParams.size should be(1)
-
-    val idParam = pathParams.get(0)
-    idParam.isPathParam should equal(true)
-    idParam.dataType should be("String")
-    idParam.required should equal(true)
-    idParam.hasMore should be(null)
 
     val allParams = op.allParams
     allParams.size should be(3)
