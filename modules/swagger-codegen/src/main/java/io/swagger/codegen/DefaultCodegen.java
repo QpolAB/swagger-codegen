@@ -852,7 +852,7 @@ public class DefaultCodegen {
         op.httpMethod = httpMethod.toUpperCase();
         op.allParams = addHasMore(allParams);
         op.bodyParams = addHasMore(bodyParams);
-        op.pathParams = new ArrayList<CodegenParameter>();// Put an empty array here, to comply with the url-crawling requirement.
+        op.pathParams = addHasMore(pathParams);
         op.queryParams = addHasMore(queryParams);
         op.headerParams = addHasMore(headerParams);
         // op.cookieParams = cookieParams;
