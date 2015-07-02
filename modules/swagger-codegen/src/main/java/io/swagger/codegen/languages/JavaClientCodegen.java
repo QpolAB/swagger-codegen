@@ -20,7 +20,7 @@ public class JavaClientCodegen extends DefaultCodegen implements CodegenConfig {
         super();
         outputFolder = "generated-code/java";
         modelTemplateFiles.put("model.mustache", ".java");
-        apiTemplateFiles.put("api.mustache", ".java");
+
         templateDir = "Java";
         apiPackage = "io.swagger.client.api";
         modelPackage = "io.swagger.client.model";
